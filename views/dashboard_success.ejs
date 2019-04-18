@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title><%= name %></title>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="/stylesheets/dashboard_css.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#"><h5>মূলপৃষ্ঠা</h5></a>
+            <li class="nav-item">
+              <a class="nav-link" href="/users/logout"><h5>লগ আউট</h5></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    <!----------------------------------------------->
+
+		<div class="container justify-content-center col-md-6 title">
+      <h1>অভিনন্দন <%= name %></h1>
+      <h2>তুমি সকল বিষয়ের সকল লেভেল সম্পন্ন করেছ। এখন পিএসসি পরীক্ষার আবেদন কর</h2>
+      <p>অথবা পুনরায় বেছে নাও তোমার পছন্দের বিষয়</p>
+    </div>
+  <!-- Main Content -->
+  <div class="container text-center mycontainer">
+      <div class="row my_row">
+        <div class="col-md-11 myrow">
+          <ul>
+            <li><div><a href="/levels"><button class="btn btn-outline-danger"><i class="fas fa-calculator fa-3x"></i></button></a><h5>গণিত</h5></div></li>
+            <li><div><button class="btn btn-outline-danger"><i class="fas fa-book-open fa-3x"></i></button><h5>বাংলা</h5></div></li>
+            <li><div><button class="btn btn-outline-danger"><i class="fab fa-etsy fa-3x"></i></button><h5>ইংরেজি</h5></div></li>
+
+            <li><div><button class="btn btn-outline-danger"><i class="fas fa-flask fa-3x"></i></button><h5>বিজ্ঞান</h5></div></li>
+            <li><div><button class="btn btn-outline-danger"><i class="fas fa-globe-asia fa-3x"></i></button><h5>বাংলাদেশ</h5></div></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row my_row">
+          <div class="col-md-11 myrow">
+            <ul>
+              <li><div><button class="btn btn-outline-danger"><i class="fas fa-mosque fa-3x"></i></button><h5>ইসলাম শিক্ষা</h5></div></li>
+              <li><div><button class="btn btn-outline-danger"><i class="fas fa-om fa-3x"></i></button><h5>হিন্দু ধর্ম শিক্ষা</h5></div></li>
+              <li><div><button class="btn btn-outline-danger"><i class="fas fa-vihara fa-3x"></i></button><h5>বৌদ্ধ ধর্ম শিক্ষা</h5></div></li>
+              <li><div><button class="btn btn-outline-danger"><i class="fas fa-cross fa-3x"></i></button><h5>খ্রিস্ট ধর্ম শিক্ষা</h5></div></li>
+              <li><div><button class="btn btn-outline-danger"><i class="fas fa-flag fa-3x"></i></button><h5>সাধারণ জ্ঞ্যান</h5></div></li>
+            </ul>
+          </div>
+        </div>
+
+        
+
+  </div>
+  <!-- Main element End -->
+  <div class="container text-center col-md-4">
+            <a href="/psc_reg"><button type="button" class="btn btn-success btn-block">পিএসসি পরীক্ষা দিতে চাই</button></a>
+        </div>
+
+</body>
+</html>

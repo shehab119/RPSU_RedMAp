@@ -1,0 +1,36 @@
+    
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= name %></title>
+		  <meta charset="utf-8">
+		  <meta name="viewport" content="width=device-width, initial-scale=1">
+		  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+		  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+  	<div>
+  		<nav class="navbar navbar-inverse">
+		  <div class="container-fluid">
+		    <div class="navbar-header">
+		      <a class="navbar-brand" href="/users/dashboard/<%=name%>">FaceApp</a>
+		    </div>
+		    <ul class="nav navbar-nav">
+		      <li class="active"><a href="/users/dashboard/<%=name%>">Home</a></li>
+		      <li><a href="#">Page 1</a></li>
+		      <li><a href="#">Page 2</a></li>
+		      <li><a href="/users/logout">Logout</a></li>
+		    </ul>
+		  </div>
+		</nav>
+  	</div>
+  	<div class="container">
+
+		<h1> Hi <%= name %></h1>
+    	<p>Welcome to your dashboard</p>
+
+  	</div>
+
+  </body>
+</html>

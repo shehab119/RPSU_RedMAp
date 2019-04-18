@@ -1,0 +1,43 @@
+body {
+
+}
+
+.title {
+  margin-top: 3vh;
+  margin-bottom: 3vh;
+  color: brown;
+}
+
+/* Navbar */
+.bg-light .navbar-collapse .nav-item a {
+    color: brown;
+}
+/******************************************************/
+
+.level-title {
+  margin-top: 5vh;
+  color: brown;
+}
+
+.mycontainer {
+   margin-top: 25vh;
+}
+
+.mycontainer .my_row .myrow ul li {
+    text-decoration: none;
+    display: inline-block;
+}
+
+.mycontainer .my_row .myrow .btn-outline-danger {
+    width: 100px;
+    height: 100px;
+}
+
+h5 {
+    color: brown;
+}
+
+progress {
+  height: 3vh;
+  width: 40%;
+}

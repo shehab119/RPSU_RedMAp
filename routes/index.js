@@ -184,7 +184,7 @@ router.get('/psc_reg', function(req, res,next) {
 router.post('/psc_reg', function(req, res, next) {
   
 
-  res.render('psc_reg');
+  res.redirect('/done_reg');
 });
 //Done_reg Routes
 router.get('/done_reg',function(req, res,next) {

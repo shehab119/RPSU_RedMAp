@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style media="screen">
+		.login {
+			margin-top: 10vh;
+		}
+	</style>
+	<title>লগইন</title>
+		<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+		<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+</head>
+<body>
+
+	<!-- Navbar -->
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<a class="navbar-brand" href="/">RedMap</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="/"><h5>মূলপৃষ্ঠা</h5></a>
+				</ul>
+			</div>
+		</nav>
+	<!----------------------------------------------->
+
+	<div class="container col-md-6 login">
+		<div class="form-control">
+            <p class="text-danger">তোমার লগইন-এর তথ্য সঠিক নয়। পুনরায় লগইন কর</p>
+			<!-- Default form login -->
+			<form class="text-center border border-light p-5" action="/users/login" method="post">
+			    <p class="h4 mb-4">লগইন কর</p>
+			    <!-- Email -->
+			    <input type="text" id="defaultLoginFormEmail" class="form-control mb-4" placeholder="ইউজার নেম (ইংরেজীতে)" name="username">
+
+			    <!-- Password -->
+			    <input type="password" id="defaultLoginFormPassword" class="form-control mb-4" placeholder="পাসওয়ার্ড" name="password">
+
+			    
+
+			    <!-- Sign in button -->
+			    <button class="btn btn-primary btn-block my-4" type="submit">লগইন</button>
+			    <!-- Register -->
+			    <p>একাউন্ট নেই?
+			        <a href="/users/signup">রেজিস্ট্রেশন কর</a>
+			    </p>
+
+			</form>
+			<!-- Default form login -->
+		</div>
+
+	</div>
+</body>
+</html>

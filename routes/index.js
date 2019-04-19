@@ -97,7 +97,7 @@ router.post('/main_quiz_1', function(req, res, next) {
       res.send('passed!');
     }*/
 
-    if(m1 == 400 && m2 == 255 && m3 == 950 && m4 == 600 && m5 == 507 && m6 == 240 && m7 == 255 && m8 == 220 && m9 == 265 && m10 == 255) {
+    if(m1 == 400 && m2 == 255 && m3 == 950 && m4 == 600 && m5 == 707 && m6 == 240 && m7 == 255 && m8 == 220 && m9 == 265 && m10 == 255) {
 
       res.redirect('/level_2');
     } else {

@@ -46,11 +46,15 @@ router.get('/dashboard/:username', function(req, res, next) {
 router.get('/login', function(req, res, next) {
   res.render('login');
 });
+router.get('/login_err', function(req, res, next) {
+  res.render('login_error');
+});
+
 
 
 router.post('/login',
   passport.authenticate('local', {
-    failureRedirect: '/users/login',
+    failureRedirect: '/users/login_err',
     failureFlash: true
   }),
   function(req, res) {

@@ -37,10 +37,9 @@ function ensureAuthenticated(req,res,next){
 
 
 /* GET users listing. */
-router.get('/dashboard/:username', function(req, res, next) {
- var username=req.user.username;
- console.log('=====>'+ username);
-  res.render('dashboard',{name:username});
+router.get('/dashboard', function(req, res, next) {
+
+  res.render('dashboard');
 });
 
 router.get('/login', function(req, res, next) {
@@ -58,8 +57,7 @@ router.post('/login',
     failureFlash: true
   }),
   function(req, res) {
-    var username = req.user.username;
-     res.redirect('/users/dashboard/' + username);
+     res.redirect('/users/dashboard');
   });
 
 router.get('/signup', function(req, res, next) {
@@ -107,9 +105,8 @@ router.post('/signup', function(req, res) {
           console.log(user);
           console.log('these data is uploaded');
         });
-
         req.flash('success_msg', 'You are register and can now login');
-        res.redirect('/users/login');
+        res.redirect('/users/dashboard');
         console.log('Passed');
       }
     });

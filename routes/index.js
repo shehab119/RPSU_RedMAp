@@ -97,11 +97,63 @@ router.post('/main_quiz_1', function(req, res, next) {
       res.send('passed!');
     }*/
 
-    if(m1 == 400 && m2 == 255 && m3 == 950 && m4 == 600 && m5 == 707 && m6 == 240 && m7 == 255 && m8 == 220 && m9 == 265 && m10 == 255) {
+    if(m1 != 400){
+      m1="";
+         res.render('main_quiz_1_error',{m1:m1,m2:m2,m3:m3,m4:m4,m5:m5,m6:m6,m7:m7,m8:m8,m9:m9,m10:m10});
+
+    }  
+    if(m2 != 255){
+      m2="";
+         res.render('main_quiz_1_error',{m1:m1,m2:m2,m3:m3,m4:m4,m5:m5,m6:m6,m7:m7,m8:m8,m9:m9,m10:m10});
+    
+    }
+     if(m3 != 950){
+      m3="";
+         res.render('main_quiz_1_error',{m1:m1,m2:m2,m3:m3,m4:m4,m5:m5,m6:m6,m7:m7,m8:m8,m9:m9,m10:m10});
+    
+    }
+     if(m4 != 600){
+      m4="";
+         res.render('main_quiz_1_error',{m1:m1,m2:m2,m3:m3,m4:m4,m5:m5,m6:m6,m7:m7,m8:m8,m9:m9,m10:m10});
+    
+    }
+     if(m5 != 707){
+      m5="";
+         res.render('main_quiz_1_error',{m1:m1,m2:m2,m3:m3,m4:m4,m5:m5,m6:m6,m7:m7,m8:m8,m9:m9,m10:m10});
+    
+    }
+     if(m6 != 240){
+      m6="";
+         res.render('main_quiz_1_error',{m1:m1,m2:m2,m3:m3,m4:m4,m5:m5,m6:m6,m7:m7,m8:m8,m9:m9,m10:m10});
+    
+    }
+     if(m7 != 255){
+      m7="";
+         res.render('main_quiz_1_error',{m1:m1,m2:m2,m3:m3,m4:m4,m5:m5,m6:m6,m7:m7,m8:m8,m9:m9,m10:m10});
+    
+    }
+     if(m8 != 220){
+      m8="";
+         res.render('main_quiz_1_error',{m1:m1,m2:m2,m3:m3,m4:m4,m5:m5,m6:m6,m7:m7,m8:m8,m9:m9,m10:m10});
+    
+    }
+     if(m9 != 265){
+      m9="";
+         res.render('main_quiz_1_error',{m1:m1,m2:m2,m3:m3,m4:m4,m5:m5,m6:m6,m7:m7,m8:m8,m9:m9,m10:m10});
+    
+    }
+     if(m10 != 255){
+      m10="";
+         res.render('main_quiz_1_error',{m1:m1,m2:m2,m3:m3,m4:m4,m5:m5,m6:m6,m7:m7,m8:m8,m9:m9,m10:m10});
+    
+    }  
+
+    else if(m1 == 400 && m2 == 255 && m3 == 950 && m4 == 600 && m5 == 707 && m6 == 240 && m7 == 255 && m8 == 220 && m9 == 265 && m10 == 255) {
 
       res.redirect('/level_2');
-    } else {
-      res.render('main_quiz_1_error');
+    }
+     else{
+      res.render('main_quiz_1_error',{m1:m1,m2:m2,m3:m3,m4:m4,m5:m5,m6:m6,m7:m7,m8:m8,m9:m9,m10:m10});
     }
 });
 
